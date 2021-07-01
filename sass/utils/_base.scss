@@ -1,0 +1,44 @@
+
+header{
+  position: relative;
+}
+.container {
+    width: 1200px;
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+  
+   
+  
+  .section-number {
+    padding-top: 94px;
+  }
+  .section4 {
+    background-color: var(--background-color-buttom);
+    padding-bottom: 94px;
+  }
+  .border {
+    border-bottom: 1px solid #ececec;
+  }
+  .section--padding-botom {
+    padding-bottom: 94px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: none;
+      
+    }
+  }
+  .our-clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    @media screen and (min-width: 480px) and (max-width: 767px){
+      padding: 0;
+      width: 480px;
+    }
+  }
+  .border {
+    border-bottom: 1px solid #ececec;
+  }
+  
+  

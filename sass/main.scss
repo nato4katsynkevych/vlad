@@ -1,0 +1,40 @@
+@import './utils/variables';
+@import './utils/mixxins';
+@import './utils/placeholder';
+@import './utils/base';
+
+@import './components/button';
+@import './components/modal_windows';
+@import './components/header_conctact';
+@import './components/header_menu';
+@import './components/header_navigation';
+@import './components/section_1_hero';
+@import './components/section_2';
+@import './components/section_3';
+@import './components/section_4';
+@import './components/section_5';
+@import './components/footer';
+
+@import './components/page2_button-menu';
+@import './components/page_portpholio';
+
+
+
+
+@import "./components/mobile-menu";
+
+
+
+
+.technologies__list {
+  @media screen and (min-width:480px) and (max-width:767px) {
+    width: 450px;
+    img {
+      width: 450px;
+    }
+    
+  }
+}
+
+
+

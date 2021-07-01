@@ -1,0 +1,107 @@
+
+.button_footer {
+  display: flex;
+
+  @include width-height(200px, 50px);
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: bold;
+  @include text-tyles(16px, 30px);
+
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: $akcent-color;
+  color: $background-color-buttom;
+  border-radius: 5px;
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    margin-top: 20px;
+  }
+  &::after {
+    content: '';
+    background-repeat: no-repeat;
+    @include width-height(24px, 24px);
+    background-image: url('../images/iconsend.png');
+    margin-left: 10px;
+  
+  }
+}
+.button-herro {
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  // font-size: 16px;
+  // line-height: 1.8;
+  @include text-tyles(16px, 1.8);
+
+  @include width-height(200px, 50px);
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 0;
+  border: 0;
+
+  background: $akcent-color;
+  color: $background-color-buttom;
+}
+
+.modal_button {
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  @include width-height(200px, 50px);
+
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  background: $akcent-color;
+  color: $background-color-buttom;
+}
+.buttom-modal {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  @include width-height(30px, 30px);
+  border: 1px #e6e6e6 solid;
+  border-radius: 50%;
+  display: flex;
+
+  @extend %flex-center;
+
+  &:hover .modal_x,
+  &:focus .modal_x {
+    fill: $akcent-color;
+  }
+}
+.modal_x {
+  width: 11px;
+  height: 11px;
+  fill: black;
+
+  transition: 250ms $timing-function;
+}
+
+
+
+.mobile-button{
+  width: 24px;
+  height: 16px;
+  
+  outline: none;
+  fill: black;
+  padding: 0;
+  margin: 0;
+
+
+
+  &:focus,
+  &:hover{
+    fill: $akcent-color;
+  }
+}

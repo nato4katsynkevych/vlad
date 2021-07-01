@@ -1,0 +1,28 @@
+.hero {
+  background-color: $backgroung-secondary-color;
+  text-align: center;
+  padding: 200px 0px 200px 0px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/Img2.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__main-paragraph {
+  width: 691px;
+
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+
+  @include text-tyles (44px,1.36);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $background-color-buttom;
+}

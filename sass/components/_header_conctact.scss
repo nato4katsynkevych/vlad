@@ -1,0 +1,37 @@
+.header-contact {
+    display: flex;
+    margin-left: 300px;
+    @media (max-width:768px) {
+      display: none;
+      
+    }
+  
+  
+  &__list:first-child {
+    padding-right: 20px;
+    margin-right: 0;
+  }
+
+  &__mail-tel {
+    display: flex;
+    align-items: center;
+    color: $main-color;
+    fill: $main-color;
+    font-style: normal;
+    font-weight: 500;
+@include text-tyles (14px, 1.7);
+    letter-spacing: 0.03em;
+    padding-left: 0;
+    transition: color 250ms $timing-function,
+      fill 250ms $timing-function;
+  
+  .header-contact &:hover,
+  .header-contact &:focus {
+    color: var(--akcent-color);
+    fill: var(--akcent-color);
+  }
+}
+  &__icon {
+    padding-right: 10px;
+  }
+}

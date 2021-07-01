@@ -1,0 +1,11 @@
+@mixin text-tyles($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+  }
+  @mixin width-height ($w, $h) {
+    width: $w;
+    height: $h;
+    
+  }
+
+  
